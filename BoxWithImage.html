@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes</title>
+    <style>
+        .outer-box {
+            width: 400px;
+            height: 1000px;
+            border: 2px solid #333;
+            border-radius: 16px;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #fafafa;
+            position: relative;
+            overflow: visible;
+        }
+        .box-label {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            position: absolute;
+            top: -24px;
+            left: 25%;
+            transform: translateX(-50%);
+            background: #fafafa;
+            padding: 0 16px;
+        }
+        .circles-container {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .circle-img {
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #888;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="box-label">
+            <label for="box1">Box 1</label>
+        </div>
+        <div class="circles-container">
+            <img class="circle-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROcBL263bASsLf2puAuKH9V_HQb94sYM3GSQ&s" alt="Box 1">
+            <img class="circle-img" src="https://m.media-amazon.com/images/I/51NwMqEnC3L._UF894,1000_QL80_.jpg" alt="Box 2">
+            <img class="circle-img" src="https://hips.hearstapps.com/hmg-prod/images/flower-frangipani-67ab6b7382454.jpg?crop=0.535xw:1.00xh;0.359xw,0&resize=980:*" alt="Box 3">
+        </div>
+    </div>
+</body>
+</html></div>
