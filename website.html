@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Fashion Store</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .navbar ul li a:hover {
+      color: #ff4081;
+    }
+    .navbar .search input {
+      padding: 6px 10px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+    .navbar .icons {
+      color: white;
+      font-size: 18px;
+      display: flex;
+      gap: 15px;
+      cursor: pointer;
+    }
+    .hero {
+      position: relative;
+      background: url("https://media.glamour.com/photos/573a1bbe8956c004684544d8/16:9/w_1280,c_limit/bella-horizontal.jpg") center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 50px;
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    
+    .products {
+      padding: 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+    .product {
+      background: #fafafa;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .product h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .product p {
+      color: #444;
+      font-weight: bold;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    
+    footer {
+      background-color: #111;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    footer h2 {
+      margin-bottom: 10px;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    footer .socials {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    footer .socials a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    footer .socials a:hover {
+      color: #ff4081;
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <div class="navbar">
+    <div class="logo">MyFashion</div>
+    <ul>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Kids</a></li>
+      <li><a href="#">Sale</a></li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="Search...">
+    </div>
+    <div class="icons">
+      🛒 👤
+    </div>
+  </div>
+  <div class="hero">
+    <h1>New Season Arrivals</h1>
+  </div>
+ 
+  <div class="products">
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/71a-0tfK5PL._SL1500_.jpg" alt="Casual Shirt">
+      <h3>Casual Shirt</h3>
+      <p>₹999</p>
+    </div>
+    <div class="product">
+      <img src="https://assets.myntassets.com/w_412,q_30,dpr_3,fl_progressive,f_webp/assets/images/27628440/2024/2/16/d7f94671-cf9b-4616-a8eb-7a25b48a1e0b1708049818319KALINIFloralPrintEmpireDress1.jpg" alt="Summer Dress">
+      <h3>Summer Dress</h3>
+      <p>₹1,499</p>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=500&q=80" alt="Denim Jacket">
+      <h3>Sneakers</h3>
+      <p>₹2,199</p>
+    </div>
+    <div class="product">
+      <img src="https://www.cottontraders.com/on/demandware.static/-/Sites-cotton-master-catalog/default/dwf3457617/images/original/AD12222W_original_neutral_stonewash_574653.jpg" alt="Sneakers">
+      <h3>Denim jacket</h3>
+      <p>₹2,799</p>
+    </div>
+  </div> 
+  <footer>
+    <h2>About Me</h2>
+    <p>Welcome to MyFashion, your go-to destination for trendy outfits at affordable prices.</p>
+    <p>📞 +91 9876543210 | 📧 myfashion@example.com</p>
+    <div class="socials">
+      <a href="#">📘</a>
+      <a href="#">📸</a>
+      <a href="#">🐦</a>
+    </div>
+  </footer>
+
+</body>
+</html>
